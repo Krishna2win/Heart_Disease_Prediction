@@ -83,7 +83,6 @@ The models are evaluated using the following metrics:
 
 Contributions are welcome! Feel free to open issues or submit pull requests for improvements.
 
-
 ## Contact
 
-For any questions or suggestions, feel free to contact [your-shrikrishnavyas111@gmail.com](mailto:shrikrishnavyas111@gmail.com).
+For any questions or suggestions, feel free to contact [shrikrishnavyas111@gmail.com](mailto:shrikrishnavyas111@gmail.com).
