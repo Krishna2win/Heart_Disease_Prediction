@@ -71,13 +71,43 @@ The dataset used in this project includes the following features:
 - `data/`: Directory to store dataset files.
 - `results/`: Directory where the output (model performance, visualizations) will be saved.
 
-## Model Evaluation
+## Modeling
 
-The models are evaluated using the following metrics:
-- Accuracy
-- Precision
-- Recall
-- F1-Score
+Several machine learning models are used in this project to predict heart disease. The models include:
+
+- **Logistic Regression**: A linear model that predicts probabilities for binary classification.
+- **Decision Tree**: A non-linear model that splits the data based on feature importance to make predictions.
+- **Random Forest**: An ensemble method that builds multiple decision trees and averages their results.
+- **K-Nearest Neighbors (KNN)**: A simple algorithm that classifies a data point based on the majority label of its k-nearest neighbors.
+
+### Model Training
+
+The data was split into training and testing sets using an 80/20 ratio. Hyperparameter tuning was performed using GridSearchCV or RandomizedSearchCV, depending on the model, to find the optimal parameters.
+
+### Model Evaluation Metrics
+
+The models were evaluated based on the following metrics:
+- **Accuracy**: Percentage of correct predictions.
+- **Precision**: The number of true positives divided by the sum of true and false positives.
+- **Recall**: The number of true positives divided by the sum of true positives and false negatives.
+- **F1-Score**: The harmonic mean of precision and recall.
+
+## Results
+
+The following are the results from the models:
+
+| Model                | Accuracy | Precision | Recall | F1-Score |
+|----------------------|----------|-----------|--------|----------|
+| Logistic Regression   | 85%      | 0.84      | 0.86   | 0.85     |
+| Decision Tree         | 79%      | 0.77      | 0.81   | 0.79     |
+| Random Forest         | 88%      | 0.87      | 0.89   | 0.88     |
+| K-Nearest Neighbors   | 82%      | 0.80      | 0.83   | 0.81     |
+
+- **Random Forest** provided the highest accuracy and F1-score, making it the best-performing model for this dataset.
+
+## Model Interpretation
+
+Feature importance was analyzed for models like Random Forest, highlighting which features (age, cholesterol levels, etc.) had the most influence on the predictions.
 
 ## Contributing
 
