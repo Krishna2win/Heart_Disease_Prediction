@@ -81,6 +81,7 @@ The following models were used to predict heart disease:
 - **K-Nearest Neighbors (KNN)**: A proximity-based classifier.
 - **Support Vector Machine (SVM)**: A linear classifier that finds the hyperplane separating classes.
 - **Bagging Classifier**: An ensemble method that combines multiple versions of a classifier to reduce variance and avoid overfitting.
+- **Ada Classifier**: AdaBoost combines weak classifiers to reduce variance and avoid overfitting.
 - **Gradient Boosting**: An ensemble boosting algorithm that iteratively improves weak learners.
 - **XGBoost**: An efficient and scalable implementation of gradient boosting.
 
@@ -104,16 +105,17 @@ The performance of each model is summarized below:
 
 | Model                | Accuracy | Precision | Recall | F1-Score |
 |----------------------|----------|-----------|--------|----------|
-| Logistic Regression   | 85%      | 0.84      | 0.86   | 0.85     |
-| Decision Tree         | 79%      | 0.77      | 0.81   | 0.79     |
-| Random Forest         | 88%      | 0.87      | 0.89   | 0.88     |
-| K-Nearest Neighbors   | 82%      | 0.80      | 0.83   | 0.81     |
-| Support Vector Machine| 86%      | 0.85      | 0.87   | 0.86     |
-| Bagging Classifier    | 87%      | 0.86      | 0.88   | 0.87     |
-| Gradient Boosting     | 89%      | 0.88      | 0.90   | 0.89     |
-| XGBoost               | 90%      | 0.89      | 0.91   | 0.90     |
+| Logistic Regression   | 82%      | 0.87      | 0.82   | 0.82     |
+| Decision Tree         | 68%      | 0.68      | 0.68   | 0.67     |
+| Random Forest         | 82%      | 0.85      | 0.85   | 0.82     |
+| K-Nearest Neighbors   | 84%      | 0.87      | 0.87   | 0.84     |
+| Support Vector Machine| 82%      | 0.85      | 0.82   | 0.82     |
+| Bagging Classifier    | 78%      | 0.81      | 0.80   | 0.70     |
+| Ada Boosting          | 78%      | 0.78      | 0.79   | 0.78     |
+| Gradient Boosting     | 80%      | 0.81      | 0.81   | 0.80     |
+| XGBoost               | 78%      | 0.79      | 0.79   | 0.78     |
 
-- **Best Model**: XGBoost achieved the highest accuracy and F1-score, proving to be the best-performing model on this dataset.
+- **Best Model**: K-Nearest Neighbors achieved the highest accuracy and F1-score, proving to be the best-performing model on this dataset.
 
 ## Model Interpretation
 
