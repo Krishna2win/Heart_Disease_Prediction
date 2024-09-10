@@ -52,24 +52,13 @@ The dataset used in this project includes the following features:
     ```bash
     pip install -r requirements.txt
     ```
+## Usage
 
-### Usage
-
-1. Place your dataset in the `data/` directory.
-
-2. Run the analysis script:
-    ```bash
-    python heart_disease_analysis.py
-    ```
-
-3. View the results and visualizations in the `results/` folder.
-
-## Files
-
-- `heart_disease_analysis.py`: Script for data preprocessing, model training, and evaluation.
-- `requirements.txt`: List of Python dependencies required for the project.
-- `data/`: Directory to store dataset files.
-- `results/`: Directory where the output (model performance, visualizations) will be saved.
+1. Clone the repository: `git clone https://github.com/Krishna2win/Heart_Disease_Prediction.git`
+2. Navigate to the project directory: `cd Heart_Disease_Prediction`
+3. Install dependencies: `pip install -r requirements.txt`
+4. Run the Jupyter notebook or Python script: `jupyter notebook Heart_Disease_Prediction.ipynb`.
+5. Provide your dataset as needed.
 
 ## Modeling
 
